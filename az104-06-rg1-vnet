@@ -1,0 +1,67 @@
+{
+    "name": "az104-06-rg1-vnet",
+    "id": "/subscriptions/97bd5240-6f78-4c57-a1f4-3a595d12831c/resourceGroups/az104-06-rg1/providers/Microsoft.Network/virtualNetworks/az104-06-rg1-vnet",
+    "etag": "W/\"e9693ea7-9dd1-4899-b1a2-884b75234c02\"",
+    "type": "Microsoft.Network/virtualNetworks",
+    "location": "canadacentral",
+    "tags": {
+        "assignment": "5",
+        "part": "task 1 vm"
+    },
+    "properties": {
+        "provisioningState": "Succeeded",
+        "resourceGuid": "4c0b0c60-91d4-44c2-b243-d2f20c114004",
+        "addressSpace": {
+            "addressPrefixes": [
+                "10.1.0.0/16",
+                "10.60.0.0/22"
+            ]
+        },
+        "subnets": [
+            {
+                "name": "default",
+                "id": "/subscriptions/97bd5240-6f78-4c57-a1f4-3a595d12831c/resourceGroups/az104-06-rg1/providers/Microsoft.Network/virtualNetworks/az104-06-rg1-vnet/subnets/default",
+                "etag": "W/\"e9693ea7-9dd1-4899-b1a2-884b75234c02\"",
+                "properties": {
+                    "provisioningState": "Succeeded",
+                    "addressPrefix": "10.1.0.0/24",
+                    "ipConfigurations": [
+                        {
+                            "id": "/subscriptions/97bd5240-6f78-4c57-a1f4-3a595d12831c/resourceGroups/az104-06-rg1/providers/Microsoft.Network/networkInterfaces/az-104-06-vm0119/ipConfigurations/ipconfig1"
+                        },
+                        {
+                            "id": "/subscriptions/97bd5240-6f78-4c57-a1f4-3a595d12831c/resourceGroups/az104-06-rg1/providers/Microsoft.Network/networkInterfaces/az-104-06-vm1919/ipConfigurations/ipconfig1"
+                        },
+                        {
+                            "id": "/subscriptions/97bd5240-6f78-4c57-a1f4-3a595d12831c/resourceGroups/az104-06-rg1/providers/Microsoft.Network/networkInterfaces/az-104-06-vm2819/ipConfigurations/ipconfig1"
+                        },
+                        {
+                            "id": "/subscriptions/97bd5240-6f78-4c57-a1f4-3a595d12831c/resourceGroups/Az104-06-rg4/providers/Microsoft.Network/loadBalancers/Az104-06-lb4/frontendIPConfigurations/Frontendconfig"
+                        }
+                    ]
+                },
+                "type": "Microsoft.Network/virtualNetworks/subnets"
+            },
+            {
+                "name": "AzureBastionSubnet",
+                "id": "/subscriptions/97bd5240-6f78-4c57-a1f4-3a595d12831c/resourceGroups/az104-06-rg1/providers/Microsoft.Network/virtualNetworks/az104-06-rg1-vnet/subnets/AzureBastionSubnet",
+                "etag": "W/\"e9693ea7-9dd1-4899-b1a2-884b75234c02\"",
+                "properties": {
+                    "provisioningState": "Succeeded",
+                    "addressPrefix": "10.1.1.0/26"
+                },
+                "type": "Microsoft.Network/virtualNetworks/subnets"
+            },
+            {
+                "name": "GatewaySubnet",
+                "id": "/subscriptions/97bd5240-6f78-4c57-a1f4-3a595d12831c/resourceGroups/az104-06-rg1/providers/Microsoft.Network/virtualNetworks/az104-06-rg1-vnet/subnets/GatewaySubnet",
+                "etag": "W/\"e9693ea7-9dd1-4899-b1a2-884b75234c02\"",
+                "properties": {
+                    "provisioningState": "Succeeded",
+                    "addressPrefix": "10.60.3.224/27"
+                },
+                "type": "Microsoft.Network/virtualNetworks/subnets"
+            }
+        ]
+    }
+}
