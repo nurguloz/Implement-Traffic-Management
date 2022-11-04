@@ -1,0 +1,51 @@
+{
+    "name": "az-104-06-vnet2",
+    "id": "/subscriptions/97bd5240-6f78-4c57-a1f4-3a595d12831c/resourceGroups/az104-06-rg1/providers/Microsoft.Network/virtualNetworks/az-104-06-vnet2",
+    "etag": "W/\"183158f2-452f-4645-9135-b3bc9a9c774c\"",
+    "type": "Microsoft.Network/virtualNetworks",
+    "location": "canadacentral",
+    "tags": {
+        "assignment": "5",
+        "part": "task4"
+    },
+    "properties": {
+        "provisioningState": "Succeeded",
+        "resourceGuid": "8a328421-68a6-404a-865e-a395c6c396ce",
+        "addressSpace": {
+            "addressPrefixes": [
+                "10.0.0.0/16",
+                "10.62.0.0/22"
+            ]
+        },
+        "subnets": [
+            {
+                "name": "subnet0",
+                "id": "/subscriptions/97bd5240-6f78-4c57-a1f4-3a595d12831c/resourceGroups/az104-06-rg1/providers/Microsoft.Network/virtualNetworks/az-104-06-vnet2/subnets/subnet0",
+                "etag": "W/\"183158f2-452f-4645-9135-b3bc9a9c774c\"",
+                "properties": {
+                    "provisioningState": "Succeeded",
+                    "addressPrefix": "10.62.0.0/24",
+                    "routeTable": {
+                        "id": "/subscriptions/97bd5240-6f78-4c57-a1f4-3a595d12831c/resourceGroups/az104-06-rg1/providers/Microsoft.Network/routeTables/az104-06-rt23"
+                    },
+                    "ipConfigurations": [
+                        {
+                            "id": "/subscriptions/97bd5240-6f78-4c57-a1f4-3a595d12831c/resourceGroups/az104-06-rg1/providers/Microsoft.Network/networkInterfaces/az104-06-vm2564/ipConfigurations/ipconfig1"
+                        }
+                    ]
+                },
+                "type": "Microsoft.Network/virtualNetworks/subnets"
+            },
+            {
+                "name": "GatewaySubnet",
+                "id": "/subscriptions/97bd5240-6f78-4c57-a1f4-3a595d12831c/resourceGroups/az104-06-rg1/providers/Microsoft.Network/virtualNetworks/az-104-06-vnet2/subnets/GatewaySubnet",
+                "etag": "W/\"183158f2-452f-4645-9135-b3bc9a9c774c\"",
+                "properties": {
+                    "provisioningState": "Succeeded",
+                    "addressPrefix": "10.0.0.0/24"
+                },
+                "type": "Microsoft.Network/virtualNetworks/subnets"
+            }
+        ]
+    }
+}
