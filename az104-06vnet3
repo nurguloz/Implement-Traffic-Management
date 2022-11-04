@@ -1,0 +1,51 @@
+{
+    "name": "az104-06vnet3",
+    "id": "/subscriptions/97bd5240-6f78-4c57-a1f4-3a595d12831c/resourceGroups/az104-06-rg1/providers/Microsoft.Network/virtualNetworks/az104-06vnet3",
+    "etag": "W/\"14d60d4b-2943-4fb9-a129-c3aa26e2514a\"",
+    "type": "Microsoft.Network/virtualNetworks",
+    "location": "canadacentral",
+    "tags": {
+        "assignment": "5",
+        "part": "task4"
+    },
+    "properties": {
+        "provisioningState": "Succeeded",
+        "resourceGuid": "3379cf7e-b732-4c85-b0e2-e669793ace11",
+        "addressSpace": {
+            "addressPrefixes": [
+                "10.2.0.0/16",
+                "10.63.0.0/22"
+            ]
+        },
+        "subnets": [
+            {
+                "name": "AzureBastionSubnet",
+                "id": "/subscriptions/97bd5240-6f78-4c57-a1f4-3a595d12831c/resourceGroups/az104-06-rg1/providers/Microsoft.Network/virtualNetworks/az104-06vnet3/subnets/AzureBastionSubnet",
+                "etag": "W/\"14d60d4b-2943-4fb9-a129-c3aa26e2514a\"",
+                "properties": {
+                    "provisioningState": "Succeeded",
+                    "addressPrefix": "10.2.0.0/26"
+                },
+                "type": "Microsoft.Network/virtualNetworks/subnets"
+            },
+            {
+                "name": "subnet0",
+                "id": "/subscriptions/97bd5240-6f78-4c57-a1f4-3a595d12831c/resourceGroups/az104-06-rg1/providers/Microsoft.Network/virtualNetworks/az104-06vnet3/subnets/subnet0",
+                "etag": "W/\"14d60d4b-2943-4fb9-a129-c3aa26e2514a\"",
+                "properties": {
+                    "provisioningState": "Succeeded",
+                    "addressPrefix": "10.63.0.0/24",
+                    "routeTable": {
+                        "id": "/subscriptions/97bd5240-6f78-4c57-a1f4-3a595d12831c/resourceGroups/az104-06-rg1/providers/Microsoft.Network/routeTables/az104-06-rt32"
+                    },
+                    "ipConfigurations": [
+                        {
+                            "id": "/subscriptions/97bd5240-6f78-4c57-a1f4-3a595d12831c/resourceGroups/az104-06-rg1/providers/Microsoft.Network/networkInterfaces/az104-06-vm3760/ipConfigurations/ipconfig1"
+                        }
+                    ]
+                },
+                "type": "Microsoft.Network/virtualNetworks/subnets"
+            }
+        ]
+    }
+}
